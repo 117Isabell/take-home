@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { CircleIcon, Sun, Moon, Monitor } from "lucide-react";
+import { Sun, Moon, Monitor } from "lucide-react";
+import Image from "next/image";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -77,10 +78,7 @@ function Header() {
     <header className="border-b border-border bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center">
-          <CircleIcon className="h-6 w-6 text-accent" />
-          <span className="ml-2 text-xl font-gilroy-semibold text-foreground">
-            Sustianly
-          </span>
+          <Image src="/logo.png" alt="" width={500} height={500} />
         </Link>
         <div className="flex items-center space-x-4">
           <ThemeToggle />
