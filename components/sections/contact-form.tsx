@@ -54,7 +54,7 @@ export function ContactForm() {
             onChange={(e) => setMessage(e.target.value)}
             required
             rows={4}
-            className="mt-1 block w-full rounded-md border-border bg-background text-foreground shadow-sm focus:border-ring focus:ring-ring resize-none"
+            className="mt-1 block w-full rounded-md border border-input bg-transparent text-foreground shadow-sm focus:border-ring focus:ring-ring/50 focus:ring-[3px] resize-none px-3 py-2 text-base placeholder:text-muted-foreground"
             placeholder="Enter your message"
           />
         </div>

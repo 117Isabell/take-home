@@ -26,7 +26,7 @@ export function Footer() {
               Book an appointment with us and we will introduce you to our
               product
             </p>
-            <div className="space-y-2">
+            <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-2 sm:space-y-0">
               <a
                 href="mailto:info@sustainly.tech"
                 className="text-accent hover:text-accent/80 transition-colors"
