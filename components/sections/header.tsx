@@ -106,12 +106,12 @@ export function Header() {
           >
             Who We Are
           </button>
-          <a
-            href="mailto:info@sustainly.tech"
+          <button
+            onClick={() => scrollToSection("contact")}
             className="text-white hover:text-blue-200 transition-colors"
           >
             Contact Us
-          </a>
+          </button>
         </nav>
 
         <div className="flex items-center space-x-4">

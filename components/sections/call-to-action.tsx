@@ -2,7 +2,7 @@ import { ContactForm } from "@/components/sections/contact-form";
 
 export function CallToAction() {
   return (
-    <section className="py-16 bg-[#122E44]">
+    <section id="contact" className="py-16 bg-[#122E44]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
           <div className="text-white">
