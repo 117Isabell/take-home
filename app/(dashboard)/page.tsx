@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { SolutionsSection } from "@/components/sections/solutions-section";
 import { CallToAction } from "@/components/sections/call-to-action";
-import { Footer } from "@/components/sections/footer";
 
 export default function HomePage() {
   return (
@@ -27,7 +26,6 @@ export default function HomePage() {
 
       <SolutionsSection />
       <CallToAction />
-      <Footer />
     </main>
   );
 }
