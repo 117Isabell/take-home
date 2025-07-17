@@ -7,10 +7,10 @@ import {
 
 export function SolutionsSection() {
   return (
-    <section id="solutions" className="py-16 bg-gray-50 w-full">
+    <section id="solutions" className="py-16 bg-muted w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900">Our solutions</h2>
+          <h2 className="text-4xl font-bold text-foreground">Our solutions</h2>
         </div>
 
         <div className="space-y-16">

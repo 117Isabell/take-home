@@ -13,7 +13,7 @@ export function Header() {
   };
 
   return (
-    <header className="border-b border-border bg-[#122E44]">
+    <header className="border-b border-border bg-primary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center">
           <Image
@@ -27,19 +27,19 @@ export function Header() {
         <nav className="hidden md:flex items-center space-x-8">
           <button
             onClick={() => scrollToSection("solutions")}
-            className="text-white hover:text-blue-200 transition-colors"
+            className="text-primary-foreground hover:text-primary-foreground/80 transition-colors"
           >
             Our Solutions
           </button>
           <button
             onClick={() => scrollToSection("about")}
-            className="text-white hover:text-blue-200 transition-colors"
+            className="text-primary-foreground hover:text-primary-foreground/80 transition-colors"
           >
             Who We Are
           </button>
           <button
             onClick={() => scrollToSection("contact")}
-            className="text-white hover:text-blue-200 transition-colors"
+            className="text-primary-foreground hover:text-primary-foreground/80 transition-colors"
           >
             Contact Us
           </button>
