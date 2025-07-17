@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import { ThemeAwareLogo } from "@/components/ui/theme-aware-logo";
 
 export function Footer() {
   return (
@@ -8,13 +8,7 @@ export function Footer() {
         <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-start">
           <div className="mb-8 lg:mb-0">
             <div className="flex items-center mb-4">
-              <Image
-                src="/logo.png"
-                alt="Sustainly Logo"
-                width={200}
-                height={50}
-                className="h-8 w-auto"
-              />
+              <ThemeAwareLogo width={200} height={50} className="h-8 w-auto" />
             </div>
             <Link
               href="/privacy-policy"
@@ -35,13 +29,13 @@ export function Footer() {
             <div className="space-y-2">
               <a
                 href="mailto:info@sustainly.tech"
-                className="block text-accent hover:text-accent/80 transition-colors"
+                className="text-accent hover:text-accent/80 transition-colors"
               >
                 info@sustainly.tech
               </a>
               <a
                 href="tel:+420725957080"
-                className="block text-accent hover:text-accent/80 transition-colors"
+                className="text-accent hover:text-accent/80 transition-colors"
               >
                 +420 725 957 080
               </a>
