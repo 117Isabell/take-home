@@ -25,22 +25,6 @@ export function SolutionCard({
         <h3 className="text-3xl font-bold text-gray-900">{title}</h3>
         <p className="text-lg text-gray-600 leading-relaxed">{description}</p>
         <p className="text-xl font-semibold text-gray-700">{price}</p>
-        <Button className="bg-purple-100 text-purple-700 hover:bg-purple-200 border-purple-200">
-          Learn more
-          <svg
-            className="ml-2 h-4 w-4"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M9 5l7 7-7 7"
-            />
-          </svg>
-        </Button>
       </div>
       <div className="flex-1 flex justify-center">{illustration}</div>
     </div>
