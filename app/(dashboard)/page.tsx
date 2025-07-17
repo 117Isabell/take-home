@@ -6,6 +6,7 @@ import {
   SustainabilityStrategyIllustration,
   CarbonFootprintIllustration,
 } from "@/components/ui/solution-illustrations";
+import { ContactForm } from "@/components/ui/contact-form";
 
 export default function HomePage() {
   return (
@@ -61,18 +62,29 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-[#122E44]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
-                Ready to launch your SaaS?
+          <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
+            <div className="text-white">
+              <h2 className="text-3xl font-bold sm:text-4xl mb-6">
+                Learn more about our product
               </h2>
-              <p className="mt-3 max-w-3xl text-lg text-gray-500">
-                Our template provides everything you need to get your SaaS up
-                and running quickly. Don't waste time on boilerplate - focus on
-                what makes your product unique.
+              <p className="text-lg text-blue-100 mb-8 leading-relaxed">
+                Feel free to contact us to understand how our non-financial data
+                reporting software can help you meet European standards, your
+                customers' expectations and your corporate sustainability goals.
               </p>
+              <div className="space-y-2 text-blue-100">
+                <p>
+                  <strong>email:</strong> info@sustainly.tech
+                </p>
+                <p>
+                  <strong>mobile:</strong> +421 902 402 292
+                </p>
+              </div>
+            </div>
+            <div>
+              <ContactForm />
             </div>
           </div>
         </div>
