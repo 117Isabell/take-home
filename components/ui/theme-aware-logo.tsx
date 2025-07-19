@@ -37,7 +37,7 @@ export function ThemeAwareLogo({
   if (!mounted) {
     return (
       <Image
-        src="/dark-theme-logo.png"
+        src="/dark-logo.png"
         alt={alt}
         width={width}
         height={height}
@@ -63,7 +63,6 @@ export function ThemeAwareLogo({
     };
 
     const logoSrc = getLogoSrc();
-
     return (
       <Image
         src={logoSrc}

@@ -16,7 +16,7 @@ export function Header() {
     <header className="border-b border-border bg-primary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center">
-          <ThemeAwareLogo width={500} height={500} />
+          <ThemeAwareLogo width={160} height={160} />
         </Link>
 
         <nav className="hidden md:flex items-center space-x-8">
