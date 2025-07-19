@@ -18,7 +18,6 @@ export function ThemeToggle() {
     setMounted(true);
   }, []);
 
-  // Don't render until mounted to avoid hydration issues
   if (!mounted) {
     return (
       <Button variant="outline" size="icon" className="rounded-full">
@@ -57,7 +56,6 @@ export function ThemeToggle() {
       </DropdownMenu>
     );
   } catch (error) {
-    // Fallback if theme context is not available
     return (
       <Button variant="outline" size="icon" className="rounded-full">
         <Sun className="h-4 w-4" />

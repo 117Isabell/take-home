@@ -12,8 +12,8 @@ interface ThemeAwareLogoProps {
 }
 
 export function ThemeAwareLogo({
-  width = 500,
-  height = 500,
+  width = 160,
+  height = 160,
   className = "",
   alt = "Sustainly Logo",
 }: ThemeAwareLogoProps) {
@@ -23,11 +23,9 @@ export function ThemeAwareLogo({
   useEffect(() => {
     setMounted(true);
 
-    // Check system preference
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
     setSystemPrefersDark(mediaQuery.matches);
 
-    // Listen for changes
     const handleChange = (e: MediaQueryListEvent) => {
       setSystemPrefersDark(e.matches);
     };
@@ -36,7 +34,6 @@ export function ThemeAwareLogo({
     return () => mediaQuery.removeEventListener("change", handleChange);
   }, []);
 
-  // Don't render until mounted to avoid hydration issues
   if (!mounted) {
     return (
       <Image
@@ -76,17 +73,16 @@ export function ThemeAwareLogo({
         className={className}
         onError={(e) => {
           const target = e.target as HTMLImageElement;
-          if (target.src !== "/dark-theme-logo.png") {
-            target.src = "/dark-theme-logo.png";
+          if (target.src !== "/dark-logo.png") {
+            target.src = "/dark-logo.png";
           }
         }}
       />
     );
   } catch (error) {
-    // Fallback if theme context is not available
     return (
       <Image
-        src="/dark-theme-logo.png"
+        src="/dark-logo.png"
         alt={alt}
         width={width}
         height={height}
