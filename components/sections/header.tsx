@@ -1,15 +1,22 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { ThemeAwareLogo } from "@/components/ui/theme-aware-logo";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 export function Header() {
+  const router = useRouter();
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const navigateToTeam = () => {
+    router.push("/team");
   };
 
   return (
@@ -27,7 +34,7 @@ export function Header() {
             Our Solutions
           </button>
           <button
-            onClick={() => scrollToSection("about")}
+            onClick={navigateToTeam}
             className="text-primary-foreground hover:text-primary-foreground/80 transition-colors"
           >
             Who We Are
