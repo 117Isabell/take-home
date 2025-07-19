@@ -1,7 +1,5 @@
 import "./globals.css";
 import type { Metadata, Viewport } from "next";
-import { getUser, getTeamForUser } from "@/lib/db/queries";
-import { SWRConfig } from "swr";
 import { ThemeProvider } from "./providers";
 
 export const metadata: Metadata = {
@@ -22,20 +20,7 @@ export default function RootLayout({
   return (
     <html lang="sk" className="bg-background text-foreground">
       <body className="min-h-[100dvh] bg-background">
-        <ThemeProvider>
-          <SWRConfig
-            value={{
-              fallback: {
-                // We do NOT await here
-                // Only components that read this data will suspend
-                "/api/user": getUser(),
-                "/api/team": getTeamForUser(),
-              },
-            }}
-          >
-            {children}
-          </SWRConfig>
-        </ThemeProvider>
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );
