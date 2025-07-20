@@ -1,5 +1,19 @@
 # Sustainly - Take-Home Task
 
+## Screenshots
+- Landing Page in Dark Theme
+![Screenshot of Landing Page in Dark Theme](./public/images/landing-page-dark-theme.png)
+
+- Landing Page in Light Theme
+![Screenshot of Landing Page in Light Theme](./public/images/landing-page-light-theme.png
+)
+
+- Team Page in Dark Theme
+![Screenshot of Team Page in Dark Theme](./public/images/team-page-dark-theme.png)
+
+- Team Page in Light Theme
+![Screenshot of Team Page in Light Theme](./public/images/team-page-light-theme.png)
+
 ## 📱 Pages
 - **Landing Page**: Hero section with ESG reporting solutions showcase
 - **Team Page**: Meet the team with detailed member profiles and experience
